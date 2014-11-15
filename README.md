@@ -2,7 +2,7 @@
 
 - Install Ansible on your local machine `sudo pip install ansible` (note: brew install doesn't work at the moment)
 - Run `ansible-galaxy install -r provisioning/requirements.txt --force`
-- Run `vagrant plugin install vagrant-cachier`
+- Run `vagrant plugin install vagrant-cachier` (optional)
 
 #Includes
 - PHP 5.5
