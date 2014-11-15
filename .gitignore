@@ -2,3 +2,4 @@
 sites
 files/*.sql
 sites.yml
+.idea
