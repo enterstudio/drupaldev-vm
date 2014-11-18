@@ -2,6 +2,7 @@
 
 - Install Ansible on your local machine `sudo pip install ansible` (note: brew install doesn't work at the moment)
 - Run `ansible-galaxy install -r provisioning/requirements.txt --force`
+- TEMP must use a git clone of geerlingguy.php until the latest version hits ansible galaxy - https://github.com/geerlingguy/ansible-role-php
 - Run `vagrant plugin install vagrant-cachier` (optional)
 
 #Includes
