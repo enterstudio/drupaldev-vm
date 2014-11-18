@@ -3,3 +3,4 @@ rvm_io.rvm1-ruby
 jdauphant.nginx
 geerlingguy.solr
 geerlingguy.php-xdebug
+geerlingguy.php

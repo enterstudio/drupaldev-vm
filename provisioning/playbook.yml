@@ -14,14 +14,14 @@
       shell: chmod 777 /var/www
     - name: Create ssh config file
       template: src=../files/config dest=/home/vagrant/.ssh/config owner=vagrant group=vagrant mode=0644
-    - name: Set RVM permissions
-      shell: chown vagrant:vagrant /home/vagrant/.rvm -R
-      when: rvmpath.stat.isdir == true
+#    - name: Set RVM permissions
+#      shell: chown vagrant:vagrant /home/vagrant/.rvm -R
+#      when: rvmpath.stat.isdir == true
   roles:
     - { role: common }
     - { role: ansible-mariadb55 }
     - { role: jdauphant.nginx }
-    - { role: geerlingguy.php, php_webserver_daemon: "nginx" }
+    - { role: geerlingguy.php}
     - { role: geerlingguy.drush }
 #    - { role: rvm_io.rvm1-ruby, tags: ruby, sudo: True }
     - { role: geerlingguy.solr }
