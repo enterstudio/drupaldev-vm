@@ -12,6 +12,7 @@ php_packages:
   - php5-common
   - php5-mysql
   - php5-dev
+  - php5-intl
 rvm1_rubies:
   - 'ruby-1.9.3'
 rvm1_install_flags: '--auto-dotfiles --user-install'
