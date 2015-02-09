@@ -2,7 +2,6 @@
 
 - Install Ansible on your local machine `sudo pip install ansible` (note: brew install doesn't work at the moment)
 - Run `ansible-galaxy install -r provisioning/requirements.txt --force`
-- TEMP must use a git clone of geerlingguy.php until the latest version hits ansible galaxy - https://github.com/geerlingguy/ansible-role-php
 - Run `vagrant plugin install vagrant-cachier` (optional)
 
 #Includes
@@ -22,5 +21,12 @@
 2. Run `ssh-add`
 3. To test `vagrant ssh` then `ssh -T git@github.com`
 
-#VHOST Config
+#vhost Config
 See `provisioning/vars/example.yml`
+
+#xdebug Setup
+xdebug is installed but not configured correctly.
+
+`sudo cp /etc/php5/mods-available/xdebug.ini /etc/php5/mods-available/`
+
+Edit xdebug.ini to enable remote debugging then restart php5-fpm.
