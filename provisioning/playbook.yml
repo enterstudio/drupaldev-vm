@@ -10,8 +10,6 @@
       register: rvmpath
     - name: install python-pycurl
       apt: pkg=python-pycurl state=latest
-    - name: hacky permissions
-      shell: chmod 777 /var/www
     - name: Create ssh config file
       template: src=../files/config dest=/home/vagrant/.ssh/config owner=vagrant group=vagrant mode=0644
     - name: Create Databases
@@ -26,8 +24,9 @@
     - { role: common }
     - { role: ansible-mariadb55 }
     - { role: jdauphant.nginx, tags: nginx }
-    - { role: geerlingguy.php}
+    - { role: geerlingguy.php }
     - { role: geerlingguy.drush }
+    - { role: geerlingguy.java }
     - { role: geerlingguy.solr }
     - { role: geerlingguy.php-xdebug }
     - { role: geerlingguy.mailhog }

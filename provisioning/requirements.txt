@@ -4,3 +4,4 @@ geerlingguy.solr
 geerlingguy.php-xdebug
 geerlingguy.php
 geerlingguy.mailhog
+geerlingguy.java
