@@ -2,7 +2,8 @@
 
 - Install Ansible on your local machine `sudo pip install ansible` (note: Ansible 1.8+ required)
 - Clone repo to folder of choice.
-- Run `ansible-galaxy install -r provisioning/requirements.txt --force`
+- Run `sudo ansible-galaxy install -r provisioning/requirements.txt --force`
+- Run `mkdir sites`
 - Run `vagrant plugin install vagrant-cachier` (optional)
 
 #Includes
