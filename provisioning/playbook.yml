@@ -32,6 +32,7 @@
     - { role: geerlingguy.php}
     - { role: geerlingguy.drush }
 #    - { role: rvm_io.rvm1-ruby, tags: ruby, sudo: True }
+    - { role: geerlingguy.java }
     - { role: geerlingguy.solr }
     - { role: geerlingguy.php-xdebug }
     - { role: geerlingguy.mailhog }
