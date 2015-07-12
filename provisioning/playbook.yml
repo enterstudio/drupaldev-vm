@@ -24,7 +24,7 @@
     - { role: common }
     - { role: ansible-mariadb55 }
     - { role: jdauphant.nginx, tags: nginx }
-    - { role: geerlingguy.php }
+    - { role: geerlingguy.php, php_fpm_daemon: php5-fpm }
     - { role: geerlingguy.drush }
     - { role: geerlingguy.java }
     - { role: geerlingguy.solr }
