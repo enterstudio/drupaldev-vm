@@ -28,7 +28,7 @@
     - { role: geerlingguy.drush }
     - { role: geerlingguy.java }
     - { role: geerlingguy.solr }
-    - { role: geerlingguy.php-xdebug }
+    - { role: geerlingguy.php-xdebug, php_xdebug_max_nesting_level: 256}
     - { role: geerlingguy.mailhog }
   handlers:
     - name: update repositories
