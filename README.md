@@ -29,6 +29,6 @@ See `provisioning/vars/example.yml`
 #xdebug Setup
 xdebug is installed but not configured correctly.
 
-`sudo cp /etc/php5/mods-available/xdebug.ini /etc/php5/mods-available/`
+`sudo mv /etc/php5/conf.d/xdebug.ini /etc/php5/fpm/conf.d/`
 
 Edit xdebug.ini to enable remote debugging then restart php5-fpm.
