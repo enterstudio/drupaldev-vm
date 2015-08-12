@@ -1,5 +1,5 @@
 ---
-# Vlad travis testing file.
+# drupaldev-vm travis testing file.
 language: python
 python: "2.7"
 
