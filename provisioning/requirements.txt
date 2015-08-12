@@ -5,4 +5,3 @@ geerlingguy.php-xdebug
 geerlingguy.php
 geerlingguy.mailhog
 geerlingguy.java
-franklinkim.users-oh-my-zsh
