@@ -16,9 +16,6 @@ install:
   - pip install ansible-lint
 
 script:
-  # Force the existence of a merged_user_settings.yml file.
-  - touch vlad_guts/merged_user_settings.yml
-
   # Syntax check on all playbooks.
   - ansible-playbook -i localhost, provisioning/roles/common/tasks/main.yml --syntax-check
 
