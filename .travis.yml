@@ -20,7 +20,7 @@ script:
   - touch vlad_guts/merged_user_settings.yml
 
   # Syntax check on all playbooks.
-  - ansible-playbook -i localhost, provisioning/roles/tasks/common/tasks/main.yml --syntax-check
+  - ansible-playbook -i localhost, provisioning/roles/common/tasks/main.yml --syntax-check
 
   # Lint Check on Ansible Playbooks
   - ansible-lint -x resources provisioning/playbook.yml
