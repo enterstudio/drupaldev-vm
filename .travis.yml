@@ -1,0 +1,26 @@
+---
+# Vlad travis testing file.
+language: python
+python: "2.7"
+
+before_install:
+  # Make sure everything's up to date.
+  - sudo apt-get update -qq
+
+install:
+
+  # Install Ansible.
+  - pip install ansible
+
+  # Install Ansible Lint
+  - pip install ansible-lint
+
+script:
+  # Force the existence of a merged_user_settings.yml file.
+  - touch vlad_guts/merged_user_settings.yml
+
+  # Syntax check on all playbooks.
+  - ansible-playbook -i localhost, provisioning/roles/tasks/common/main.yml --syntax-check
+
+  # Lint Check on Ansible Playbooks
+  - ansible-lint -x resources provisioning/playbook.yml
