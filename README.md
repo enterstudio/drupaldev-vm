@@ -1,4 +1,4 @@
-#Install
+#Install [![Build Status](https://travis-ci.org/mikebell/drupaldev-vm.svg?branch=master)](https://travis-ci.org/mikebell/drupaldev-vm)
 
 - Install Ansible on your local machine `sudo pip install ansible` (note: Ansible 1.8+ required)
 - Clone repo to folder of choice.
