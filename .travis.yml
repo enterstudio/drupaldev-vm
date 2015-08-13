@@ -20,4 +20,4 @@ script:
   - ansible-playbook -i localhost, provisioning/roles/common/tasks/main.yml --syntax-check
 
   # Lint Check on Ansible Playbooks
-  - ansible-lint -x resources provisioning/playbook.yml
+  # - ansible-lint -x resources provisioning/playbook.yml
