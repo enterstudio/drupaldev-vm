@@ -32,3 +32,8 @@ xdebug is installed but not configured correctly.
 `sudo mv /etc/php5/conf.d/xdebug.ini /etc/php5/fpm/conf.d/`
 
 Edit xdebug.ini to enable remote debugging then restart php5-fpm.
+
+#License
+Attribution-NoDerivatives 4.0
+
+Please see - http://creativecommons.org/licenses/by-nd/4.0/
