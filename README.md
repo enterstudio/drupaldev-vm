@@ -24,6 +24,10 @@
 3. To test `vagrant ssh` then `ssh -T git@github.com`
 
 #vhost Config
+1. Run `cp example.yml sites.yml`
+2. Amend the file sites.yml to rename your local environment as required. The server_name must end in .drupal.dev for you to be able to access you local site through the browser.
+3. Update your database settings as required: replace `database_name` with the name of the database you wish to be created, and `db_user` and `db_pass` with the username and password of the MySQL user account your local site should use.
+
 See `provisioning/vars/example.yml`
 
 #xdebug Setup
