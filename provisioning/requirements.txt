@@ -5,3 +5,4 @@ geerlingguy.php-xdebug
 geerlingguy.php
 geerlingguy.mailhog
 geerlingguy.java
+DavidWittman.redis
