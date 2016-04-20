@@ -1,0 +1,8 @@
+- src: geerlingguy.drush
+- src: jdauphant.nginx
+- src: geerlingguy.solr
+- src: geerlingguy.php-xdebug
+- src: geerlingguy.php
+- src: geerlingguy.mailhog
+- src: geerlingguy.java
+- src: DavidWittman.redis
